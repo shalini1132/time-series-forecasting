@@ -19,10 +19,10 @@ This project trains an LSTM model to forecast **energy_consumption** using exoge
 
 ## 3. Baseline model (implemented)
 A simple baseline using **Exponential Smoothing** (Holt-Winters without seasonality) was implemented in `src/baseline.py`. Baseline metrics:
-- Baseline RMSE: `<baseline_rmse>`  
-- Baseline MAE: `<baseline_mae>`
+- Baseline RMSE: 7.936299533216016
+- Baseline MAE: 6.453626669922034 
 
-(Replace angle-bracket values after running `run.py`.)
+
 
 Rationale: baseline provides a simple, interpretable reference to judge LSTM performance.
 
@@ -37,10 +37,10 @@ Rationale: baseline provides a simple, interpretable reference to judge LSTM per
 - **Loss / optimizer:** MSE loss, Adam optimizer.
 - **Training:** `epochs=20`, `batch_size=32` (adjustable), `validation_split=0.1`.
 - **Performance (example):**
-  - LSTM RMSE: `<lstm_rmse>`  
-  - LSTM MAE: `<lstm_mae>`
+  - LSTM RMSE: 5.376  
+  - LSTM MAE: 4.197
 
-(Replace with your run values.)
+
 
 ---
 
